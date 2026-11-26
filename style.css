@@ -1,5 +1,9 @@
 
-/* Configurações gerais */
+
+/* =================================
+   CONFIGURAÇÕES GERAIS
+================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -23,14 +27,19 @@ body {
     line-height: 1.7;
 }
 
-/* Cabeçalho */
+/* =================================
+   CABEÇALHO
+================================= */
+
 .header {
-    min-height: 550px;
+    min-height: auto;
     height: auto;
     background: var(--primary);
     color: var(--white);
-    padding: 25px 10% 70px;
+    padding: 25px 10% 55px;
 }
+
+/* Menu superior */
 
 .navbar {
     display: flex;
@@ -63,9 +72,11 @@ body {
     color: var(--accent);
 }
 
+/* Apresentação principal */
+
 .hero {
     max-width: 650px;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .tag {
@@ -95,6 +106,8 @@ body {
     color: #d1d9e4;
 }
 
+/* Botão principal */
+
 .btn {
     display: inline-block;
     background: var(--accent);
@@ -110,7 +123,10 @@ body {
     transform: translateY(-3px);
 }
 
-/* Seções */
+/* =================================
+   SEÇÕES GERAIS
+================================= */
+
 .section {
     padding: 80px 10%;
     text-align: center;
@@ -129,7 +145,10 @@ body {
     border-radius: 5px;
 }
 
-/* Sobre mim */
+/* =================================
+   SOBRE MIM
+================================= */
+
 .sobre p {
     max-width: 750px;
     margin: 0 auto 20px;
@@ -139,7 +158,10 @@ body {
     line-height: 1.8;
 }
 
-/* Projetos */
+/* =================================
+   ESTUDOS E DESENVOLVIMENTO
+================================= */
+
 .projetos {
     background: #eaf0f7;
 }
@@ -189,7 +211,10 @@ body {
     font-weight: bold;
 }
 
-/* Contato */
+/* =================================
+   CONTATO
+================================= */
+
 .contato p {
     margin-bottom: 15px;
 }
@@ -207,7 +232,10 @@ body {
     text-decoration: underline;
 }
 
-/* Rodapé */
+/* =================================
+   RODAPÉ
+================================= */
+
 .footer {
     background: var(--primary);
     color: var(--white);
@@ -216,17 +244,15 @@ body {
     font-size: 14px;
 }
 
-/* Responsividade */
+/* =================================
+   TABLETS E CELULARES
+================================= */
+
 @media (max-width: 768px) {
 
     .header {
-    min-height: auto;
-    padding-bottom: 60px;
-}
-
-.hero {
-    margin-top: 80px;
-}
+        padding: 20px 6% 50px;
+    }
 
     .navbar {
         flex-direction: column;
@@ -240,7 +266,7 @@ body {
     }
 
     .hero {
-        margin-top: 100px;
+        margin-top: 70px;
     }
 
     .hero h1 {
@@ -260,7 +286,12 @@ body {
     }
 }
 
+/* =================================
+   CELULARES PEQUENOS
+================================= */
+
 @media (max-width: 400px) {
+
     .hero h1 {
         font-size: 30px;
     }
@@ -268,5 +299,9 @@ body {
     .nav-links {
         gap: 12px;
         font-size: 14px;
+    }
+
+    .logo {
+        font-size: 23px;
     }
 }
